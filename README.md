@@ -29,12 +29,12 @@ Designed for deep work sessions, Pomodoro-style productivity, and keyboard-drive
 sudo apt update
 sudo apt install -y build-essential libncursesw5-dev
 cc tt.c -lncursesw -o tt
-sudo mv tt /usr/local/bin/```
+sudo mv tt /usr/local/bin/
+```
 
 ### Build on macOS
 ```bash 
 brew install ncurses
-cc tt.c -I"$(brew --prefix ncurses)/include" \
-       -L"$(brew --prefix ncurses)/lib" -lncursesw -o tt
+make
 sudo mv tt /usr/local/bin/   # or /opt/homebrew/bin on Apple Silicon
 ```
